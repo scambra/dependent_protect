@@ -1,0 +1,145 @@
+# Logfile created on Sun Jul 30 03:23:01 CEST 2006 by logger.rb/1.5.2.7
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: no such table: companies: DROP TABLE companies[0m
+  [4;35;1mSQL (0.352609)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.249171)[0m   [0;1mCREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.243700)[0m   [0mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;36;1mSQL (0.001462)[0m   [0;1mPRAGMA table_info(schema_info)[0m
+  [4;35;1mSQL (0.233039)[0m   [0mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.374005)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.244744)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001296)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.259787)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.308970)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.242635)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001245)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.234673)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;36;1mSQL (0.511355)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.242258)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001253)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.265396)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.002414)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001337)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001168)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002231)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.001408)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mSQL (0.518647)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.244048)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001467)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.264112)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.001672)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001093)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001316)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002138)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.001723)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.001637)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.004243)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001570)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001475)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.380056)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.231077)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001459)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.222933)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.001667)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001157)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001091)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002152)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.001790)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.001716)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.001311)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001045)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001176)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.439825)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.271382)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001234)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.269928)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.001915)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.002871)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001098)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002066)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.001802)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.001639)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.001405)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001371)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001073)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.542419)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.345138)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001224)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.280027)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.002960)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001421)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001104)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.004161)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.001569)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.002282)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.001124)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001058)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001379)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001600)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 4) LIMIT 1[0m
+  [4;35;1mCompany Load (0.000755)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id [0m
+  [4;36;1mSQL (0.286080)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.256702)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001226)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.271669)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.001793)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001419)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.003394)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002202)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.011262)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.001951)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.001378)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.002100)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001589)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001666)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 4) LIMIT 1[0m
+  [4;35;1mCompany Load (0.000569)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id [0m
+  [4;36;1mCompany Load (0.000580)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Destroy (0.003189)[0m   [0m DELETE FROM companies
+ WHERE id = 4
+[0m
+  [4;36;1mSQL (0.577528)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.254211)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001242)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.264907)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.002002)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001170)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001073)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002551)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.001507)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.002158)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.001171)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001062)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001095)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001638)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 4) LIMIT 1[0m
+  [4;35;1mCompany Load (0.000562)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id [0m
+  [4;36;1mCompany Load (0.000554)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Destroy (0.002922)[0m   [0m DELETE FROM companies
+ WHERE id = 4
+[0m
+  [4;36;1mSQL (0.492315)[0m   [0;1mDROP TABLE companies[0m
+  [4;35;1mSQL (0.220598)[0m   [0mCREATE TABLE companies ("id" INTEGER PRIMARY KEY NOT NULL, "name" varchar(255), "client_of" integer) [0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.001181)[0m   [0mPRAGMA table_info(schema_info)[0m
+  [4;36;1mSQL (0.238530)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mCompany Load (0.002162)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001516)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001026)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mSQL (0.002119)[0m   [0;1mPRAGMA table_info(companies)[0m
+  [4;35;1mCompany Load (0.002366)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id [0m
+  [4;36;1mCompany Load (0.001997)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 1) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Load (0.001132)[0m   [0mSELECT * FROM companies WHERE (companies.id = 1) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001066)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 2) LIMIT 1[0m
+  [4;35;1mCompany Load (0.001129)[0m   [0mSELECT * FROM companies WHERE (companies.id = 3) LIMIT 1[0m
+  [4;36;1mCompany Load (0.001872)[0m   [0;1mSELECT * FROM companies WHERE (companies.id = 4) LIMIT 1[0m
+  [4;35;1mCompany Load (0.000521)[0m   [0mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id [0m
+  [4;36;1mCompany Load (0.000539)[0m   [0;1mSELECT * FROM companies WHERE (companies.client_of = 4) ORDER BY id LIMIT 1[0m
+  [4;35;1mCompany Destroy (0.003307)[0m   [0m DELETE FROM companies
+ WHERE id = 4
+[0m

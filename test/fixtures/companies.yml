@@ -1,0 +1,17 @@
+protected_firm:
+  id: 1
+  name: ProtectedFirm
+  
+soft_company:
+  id: 2
+  name: SoftCompany
+  client_of: 1
+  
+too_good_software:
+  id: 3
+  name: TooGoodSoftware
+  client_of: 1
+
+protected_firm_without_companies:
+  id: 4
+  name: ProtectedFirmWithoutCompanies
