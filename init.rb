@@ -1,3 +1,2 @@
-# Include hook code here
-
 require 'dependent_protect'
+ActiveRecord::Base.send :include, DependentProtect

@@ -1,22 +1,62 @@
-require File.dirname(__FILE__) + '/test_helper'
+require 'rubygems'
+require 'active_record'
+require 'test/unit'
+require 'ostruct'
+require File.join(File.dirname(__FILE__), '..', 'lib', 'dependent_protect')
 
 class DependentProtectTest < Test::Unit::TestCase
-  fixtures :companies
+  
+  # Mocking everything necesary to test the plugin.
+  class Company
+    def initialize(with_or_without)
+      @with_companies = with_or_without == :with_companies
+    end
+    
+    def self.class_name
+      self.name
+    end
+    
+    def self.has_many(association_id, options = {}, &extension)
+    end
+    
+    def self.create_reflection(macro, name, options, active_record)
+      reflection = OpenStruct.new
+      reflection.options = options.clone
+      reflection.name = name
+      return reflection
+    end
+    
+    # not the real signature of the method, but forgive me
+    def self.before_destroy(s)
+      @@s = s
+    end
+    
+    def destroy
+      eval(@@s) if @@s
+    end
+    
+    def companies
+      cs = OpenStruct.new
+      cs.with_companies = @with_companies
+      def cs.find(arg)
+        self.with_companies
+      end
+      return cs
+    end
+    
+    include DependentProtect
+    
+    has_many :companies, :dependent => :protect
+  end
   
   def test_destroy_protected_with_companies
-    protected_firm = companies(:protected_firm)
-    assert_equal [companies(:soft_company), companies(:too_good_software)], protected_firm.companies
+    protected_firm = Company.new(:with_companies)
     assert_raises(ActiveRecord::ReferentialIntegrityProtectionError) { protected_firm.destroy }
-    protected_firm.reload
-    assert_equal companies(:soft_company).reload.client_of, protected_firm.id
-    assert_equal companies(:too_good_software).reload.client_of, protected_firm.id
   end
   
   def test_destroy_protected_without_companies
-    protected_firm_without_companies = companies(:protected_firm_without_companies)
-    assert_equal [], protected_firm_without_companies.companies
+    protected_firm_without_companies = Company.new(:without_companies)
     assert_nothing_raised { protected_firm_without_companies.destroy }
-    assert protected_firm_without_companies.frozen?
   end
   
   def test_old_dependent_options
